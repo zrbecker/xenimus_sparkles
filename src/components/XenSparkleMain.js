@@ -15,12 +15,12 @@ export default class XenSparkleMain extends Component {
         </div>
         <XenSparkleFilterContainer />
         <hr />
-        <div className="row">
-          <div className="col-md">
+        <div className="row mt-n3">
+          <div className="col-md mt-4">
             <h4 className="text-center">Sparkle</h4>
             <XenSparkleItemList items={this.props.sparkleItems} />
           </div>
-          <div className="col-md">
+          <div className="col-md mt-4">
             <h4 className="text-center">No Sparkle</h4>
             <XenSparkleItemList items={this.props.noSparkleItems} />
           </div>
