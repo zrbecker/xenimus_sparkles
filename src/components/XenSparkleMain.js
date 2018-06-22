@@ -10,7 +10,7 @@ export default class XenSparkleMain extends Component {
         <div className="jumbotron text-center">
           <h1 className="display-4">Xenimus Sparkle Calculator</h1>
           <p className="lead">
-            Test! out sparkle settings, so you don't miss out on anything!
+            Test out sparkle settings, so you don't miss out on anything!
           </p>
         </div>
         <XenSparkleFilterContainer />
