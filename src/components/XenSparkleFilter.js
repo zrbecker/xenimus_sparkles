@@ -31,7 +31,7 @@ export default class XenSparkleFilter extends Component {
           <div className="form-group col-md-2">
             <label htmlFor="itemLevel">Item Level</label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               id="itemLevel"
               placeholder="Item Level"

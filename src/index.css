@@ -2,8 +2,31 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #f5f5f5;
+  background-image: url("./images/brick-wall-dark.png");
 }
 
-.mt-n3 {
-  margin-top: -1rem !important;
+.xenspark-title {
+  background-color: #000000;
+  background-image: url("./images/crissxcross.png");
+  color: #eeeeee;
+}
+
+.xenspark-body {
+  background-color: #ffffff;
+  background-image: url("./images/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding-top: 2rem;
+}
+
+.xenspark-root .list-group-item {
+  background-color: #fefefe;
+}
+
+.xenspark-root input {
+  background-color: #fefefe;
+}
+
+.xenspark-root input:focus {
+  background-color: #fefefe;
 }
