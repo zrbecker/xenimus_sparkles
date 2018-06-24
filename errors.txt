@@ -1,6 +1,0 @@
-
-/mnt/c/Users/zrbecker/Documents/xenimus_sparkles/src/registerServiceWorker.js
-  86:3  error  'fetch' is not defined  no-undef
-
-✖ 1 problem (1 error, 0 warnings)
-
