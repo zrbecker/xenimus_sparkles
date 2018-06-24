@@ -1,27 +1,28 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 
 export default class XenSparkleFilter extends Component {
   componentDidMount() {
-    this.updateFilter();
+    this.updateFilter()
   }
 
   componentDidUpdate() {
-    this.updateFilter();
+    this.updateFilter()
   }
 
   updateFilter() {
-    const {itemLevel, alwaysInclude, alwaysExclude} = this.props;
-    const alwaysIncludeList = alwaysInclude !== '' ?
-      alwaysInclude.split(',').filter(phrase => phrase !== '') :
-      [];
-    const alwaysExcludeList = alwaysExclude !== '' ?
-      alwaysExclude.split(',').filter(phrase => phrase !== '') :
-      [];
+    const {itemLevel, alwaysInclude, alwaysExclude} = this.props
+    const alwaysIncludeList = alwaysInclude !== ''
+      ? alwaysInclude.split(',').filter(phrase => phrase !== '')
+      : []
+    const alwaysExcludeList = alwaysExclude !== ''
+      ? alwaysExclude.split(',').filter(phrase => phrase !== '')
+      : []
     this.props.updateFilter({
       itemLevel: Number(itemLevel),
       alwaysInclude: alwaysIncludeList,
       alwaysExclude: alwaysExcludeList,
-    });
+    })
   }
 
   render() {
@@ -66,6 +67,18 @@ export default class XenSparkleFilter extends Component {
           </div>
         </div>
       </form>
-    );
+    )
   }
+}
+
+XenSparkleFilter.propTypes = {
+  itemLevel: PropTypes.string,
+  alwaysInclude: PropTypes.string,
+  alwaysExclude: PropTypes.string,
+
+  changeItemLevel: PropTypes.func,
+  changeAlwaysInclude: PropTypes.func,
+  changeAlwaysExclude: PropTypes.func,
+
+  updateFilter: PropTypes.func,
 }

@@ -1,15 +1,15 @@
-import XenSparkleFilter from '../components/XenSparkleFilter';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import XenSparkleFilter from '../components/XenSparkleFilter'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import {
   changeItemLevel,
   changeAlwaysInclude,
   changeAlwaysExclude,
-} from '../actions/filterFormActions';
-import { updateFilter } from '../actions/filterUpdateFilter';
+} from '../actions/filterFormActions'
+import { updateFilter } from '../actions/filterUpdateFilter'
 
 const mapStateToProps = ({filterForm}) => {
-  return {...filterForm};
+  return {...filterForm}
 }
 
 const mapDispatchToProps = dispatch => {
@@ -18,7 +18,7 @@ const mapDispatchToProps = dispatch => {
     changeAlwaysInclude,
     changeAlwaysExclude,
     updateFilter,
-  }, dispatch);
+  }, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(XenSparkleFilter);
+export default connect(mapStateToProps, mapDispatchToProps)(XenSparkleFilter)

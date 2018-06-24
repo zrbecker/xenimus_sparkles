@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import XenSparkleFilterContainer from '../containers/XenSparkleFilterContainer';
-import XenSparkleItemList from './XenSparkleItemList';
+import XenSparkleFilterContainer from '../containers/XenSparkleFilterContainer'
+import XenSparkleItemList from './XenSparkleItemList'
 
 export default class XenSparkleMain extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class XenSparkleMain extends Component {
         <div className="jumbotron text-center xenspark-title mb-0">
           <h1 className="display-4">Xenimus Sparkles Calculator</h1>
           <p className="lead">
-            Test out sparkle settings, so you don't miss out on anything!
+            Test out sparkle settings, so you don&apos;t miss out on anything!
           </p>
         </div>
         <div className="container xenspark-body">
@@ -28,6 +29,19 @@ export default class XenSparkleMain extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
+}
+
+XenSparkleMain.propTypes = {
+  sparkleItems: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    itemLevel: PropTypes.number,
+  })),
+  noSparkleItems: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    itemLevel: PropTypes.number,
+  })),
 }
